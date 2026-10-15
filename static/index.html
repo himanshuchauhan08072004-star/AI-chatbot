@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeAlpha - Demo Website</title>
+<link rel="stylesheet" href="/static/widget.css">
+<style>
+body{margin:0;font-family:system-ui,Arial,sans-serif;color:#222}
+header{background:#111827;color:#fff;padding:20px 8%;display:flex;justify-content:space-between}
+.hero{padding:90px 8%;background:linear-gradient(135deg,#4f46e5,#9333ea);color:#fff}
+.hero h1{font-size:42px;margin:0 0 12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:50px 8%}
+.card{border:1px solid #e5e7eb;border-radius:12px;padding:22px}
+</style>
+</head>
+<body>
+<header><strong>CodeAlpha</strong><span>Home &middot; Services &middot; Internships &middot; Contact</span></header>
+<section class="hero"><h1>Scalable. Secure. Cloud-first.</h1><p>Click the chat bubble to talk to our AI assistant.</p></section>
+<section class="cards">
+<div class="card"><h3>Web Development</h3><p>Modern, fast websites.</p></div>
+<div class="card"><h3>Cloud Computing</h3><p>AWS, Azure, GCP deployments.</p></div>
+<div class="card"><h3>AI Solutions</h3><p>Chatbots and ML products.</p></div>
+</section>
+<script src="/static/widget.js" data-api=""></script>
+</body>
+</html>

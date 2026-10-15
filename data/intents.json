@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {"tag": "greeting", "patterns": ["hi", "hello", "hey there", "good morning", "good evening", "hello bot", "is anyone there", "namaste"],
+     "responses": ["Hello! Welcome to CodeAlpha. How can I help you today?", "Hi there! Ask me about our services, internships, pricing or support."]},
+    {"tag": "goodbye", "patterns": ["bye", "goodbye", "see you later", "talk to you later", "i am leaving", "exit", "close chat"],
+     "responses": ["Goodbye! Have a great day.", "See you soon! Come back any time."]},
+    {"tag": "thanks", "patterns": ["thanks", "thank you", "thanks a lot", "that was helpful", "great help", "appreciate it"],
+     "responses": ["You're welcome!", "Happy to help. Anything else?"]},
+    {"tag": "about", "patterns": ["who are you", "what is codealpha", "tell me about your company", "about the company", "what do you do", "what are you"],
+     "responses": ["CodeAlpha is a software development company building scalable, secure web, mobile and cloud solutions. I'm its virtual assistant."]},
+    {"tag": "services", "patterns": ["what services do you offer", "your services", "what can you build", "do you do web development", "app development services", "cloud services", "software solutions you provide"],
+     "responses": ["We offer web development, mobile apps, cloud computing, AI/ML solutions and UI/UX design."]},
+    {"tag": "pricing", "patterns": ["how much does it cost", "pricing", "what are your prices", "price of a website", "cost of app development", "quote for project", "rates", "is it expensive"],
+     "responses": ["Pricing depends on scope. Starter websites begin at a fixed package; custom apps are quoted after a free consultation. Email services@codealpha.tech for a quote."]},
+    {"tag": "internship", "patterns": ["do you offer internships", "internship details", "how to apply for internship", "internship certificate", "tell me about the internship program", "intern tasks", "how many tasks to complete", "letter of recommendation"],
+     "responses": ["We run internships in web, app, cloud, AI and more. Complete the required tasks, upload code to GitHub as CodeAlpha_ProjectName, post a LinkedIn video and submit the form to earn a QR-verified certificate."]},
+    {"tag": "contact", "patterns": ["how can i contact you", "contact details", "phone number", "email address", "whatsapp number", "where can i reach you", "get in touch"],
+     "responses": ["Email: services@codealpha.tech | WhatsApp: +91 9336576683 | Web: www.codealpha.tech"]},
+    {"tag": "hours", "patterns": ["what are your working hours", "when are you open", "office timings", "business hours", "are you open on sunday", "support timings"],
+     "responses": ["Our team is available Monday to Saturday, 10 AM to 7 PM IST. I'm online 24/7."]},
+    {"tag": "support", "patterns": ["i need help", "technical support", "something is not working", "report a bug", "i have a problem", "facing an issue", "need assistance"],
+     "responses": ["Sorry to hear that. Please describe the issue, or email services@codealpha.tech with screenshots and our team will respond."]},
+    {"tag": "refund", "patterns": ["refund policy", "can i get my money back", "cancel my order", "how do i cancel", "return policy", "money back guarantee"],
+     "responses": ["Refund requests are reviewed within 7 working days of the request. Contact services@codealpha.tech with your order ID."]},
+    {"tag": "tracking", "patterns": ["where is my order", "track my order", "order status", "project status", "delivery status", "when will it be delivered"],
+     "responses": ["Share your order or project ID with services@codealpha.tech and we'll send a live status update."]},
+    {"tag": "human", "patterns": ["talk to a human", "connect me to an agent", "i want a real person", "speak to support executive", "human agent please", "customer care"],
+     "responses": ["Connecting you to a human: WhatsApp +91 9336576683 or email services@codealpha.tech."]}
+  ],
+  "fallback": ["Sorry, I didn't get that. Try asking about services, pricing, internships, contact or support.", "I'm not sure about that. Could you rephrase, or email services@codealpha.tech?"]
+}
