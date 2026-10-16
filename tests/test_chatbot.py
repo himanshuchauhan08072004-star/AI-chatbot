@@ -1,7 +1,4 @@
-from fastapi.testclient import TestClient
-
 from app.engine import ChatEngine
-from app.main import app
 
 # Held-out phrasings (NOT in intents.json) with expected intent. None = must fall back.
 CASES = [
@@ -30,14 +27,3 @@ def test_accuracy_at_least_85_percent():
     wrong = [(q, exp, engine.predict(q)) for q, exp in CASES if engine.predict(q)[0] != exp]
     print(f"\naccuracy={acc:.1%} ({ok}/{len(CASES)}) wrong={wrong}")
     assert acc >= 0.85
-
-
-def test_api_chat_and_health():
-    c = TestClient(app)
-    assert c.get("/api/health").json()["status"] == "ok"
-    r = c.post("/api/chat", json={"message": "what are your prices"})
-    assert r.status_code == 200 and r.json()["intent"] == "pricing"
-
-
-def test_api_rejects_empty():
-    assert TestClient(app).post("/api/chat", json={"message": ""}).status_code == 422

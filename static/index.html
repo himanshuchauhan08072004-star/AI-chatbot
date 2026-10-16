@@ -7,9 +7,10 @@
 <link rel="stylesheet" href="/static/widget.css">
 <style>
 body{margin:0;font-family:system-ui,Arial,sans-serif;color:#222}
-header{background:#111827;color:#fff;padding:20px 8%;display:flex;justify-content:space-between}
+header{background:#111827;color:#fff;padding:20px 8%;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .hero{padding:90px 8%;background:linear-gradient(135deg,#4f46e5,#9333ea);color:#fff}
-.hero h1{font-size:42px;margin:0 0 12px}
+.hero h1{font-size:clamp(26px,6vw,42px);margin:0 0 12px}
+@media(max-width:600px){.hero{padding:50px 6%}.cards{padding:30px 6%}}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:50px 8%}
 .card{border:1px solid #e5e7eb;border-radius:12px;padding:22px}
 </style>
